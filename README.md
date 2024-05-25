@@ -16,12 +16,19 @@ This project has three main function:
 
 This project has multiple function:
 1. main()- This function prints the option for the user selection and input. It uses try and except to handle all invalid inputs. The main function calls the function according to the user selected input.
+   
 2.recoiz()- This function initialize some variables for the usage of the program and also checks the csv file for last date and creates a new column in the csv file.
 This function handles the creation of the temp files and compares the temp files at the user log out time and calls data_writer() to write data to csv and calls temp_writer() to write temp data.
+
 3. reco()- this function captures the video feed from webcam . It creates an array of the known faces by using loops to read the .jpg files .The captured frame is then compared to the array of the known faces and returns the known face uid and the time currently.
+   
 4.ine()-This function is responsible of saving the new employee name in csv file , giving unique uid and coping the inputted photo location the project folder.
+
 5.data_writer()-This function writes data to csv file by creating a dataframe with pandas .this function gets input of the temp data from recoiz().
+
 6.pay_cal() - This function reads the csv file for the names and the attendance to calculate the pay according the input of the user in tabular form.
+
 7.temp_writer() - This function uses pickle to write the data in list to a .dat file in the temp folder of the project.
+
 8.temp_reader()- This function uses pickle to read the data from .dat file a list .
 
