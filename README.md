@@ -1,6 +1,6 @@
 # Face-Recognition-Attendance-Marker
  #### Video Demo:  https://youtu.be/mKfLq9JiYfc
-    #### Description:
+Description:
 This project utilizes  face recognition algorithms to automate the attendance marking process. By integrating computer vision technology, the system can accurately identify and verify individuals from a live video feed , ensuring a seamless and reliable attendance management solution.
 
 In this project, we employ libraries such as OpenCV for image processing, and machine learning frameworks like dlib and face_recognition for the facial recognition tasks. By combining these powerful tools, the system not only identifies individuals but also maintains an up-to-date attendance log, which can be exported for administrative use.
