@@ -10,10 +10,8 @@ In the digital age, the efficiency and accuracy of managing attendance in educat
 The Face Recognition Attendance Marker stands as a testament to how modern technology can streamline and enhance routine administrative tasks, paving the way for smarter and more efficient workplaces and educational environments.
  
 This project has three main function:
-1. To record the login and logout time of the employees by capturing the video feed from the camera. The system creates temp files to store the temporary data and once the employee logs out the temp data is written to the csv file.
-   
+1.To record the login and logout time of the employees by capturing the video feed from the camera. The system creates temp files to store the temporary data and once the employee logs out the temp data is written to the csv file.
 2.To enter a new employee to the system. This require user to enter the name and the location of the photo the employee. The system saves the name of the employee in the csv file with its unique uid which is assigned automatically by the system. The image is also copied by the system to its directory for using to match faces.
-
 3.The last function calculates the pay of the employee and automatically accounts for full days and half days the pay is calculated accordingly. The system prints the pay in tabular form displaying the name, full days ,half days and its calculated pay.
 
 This project has multiple function:
