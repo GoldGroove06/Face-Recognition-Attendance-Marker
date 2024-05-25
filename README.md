@@ -11,17 +11,19 @@ The Face Recognition Attendance Marker stands as a testament to how modern techn
  
 This project has three main function:
 1. To record the login and logout time of the employees by capturing the video feed from the camera. The system creates temp files to store the temporary data and once the employee logs out the temp data is written to the csv file.
+   
 2.To enter a new employee to the system. This require user to enter the name and the location of the photo the employee. The system saves the name of the employee in the csv file with its unique uid which is assigned automatically by the system. The image is also copied by the system to its directory for using to match faces.
+
 3.The last function calculates the pay of the employee and automatically accounts for full days and half days the pay is calculated accordingly. The system prints the pay in tabular form displaying the name, full days ,half days and its calculated pay.
 
 This project has multiple function:
 1. main()- This function prints the option for the user selection and input. It uses try and except to handle all invalid inputs. The main function calls the function according to the user selected input.
-   
+
 2.recoiz()- This function initialize some variables for the usage of the program and also checks the csv file for last date and creates a new column in the csv file.
 This function handles the creation of the temp files and compares the temp files at the user log out time and calls data_writer() to write data to csv and calls temp_writer() to write temp data.
 
 3. reco()- this function captures the video feed from webcam . It creates an array of the known faces by using loops to read the .jpg files .The captured frame is then compared to the array of the known faces and returns the known face uid and the time currently.
-   
+
 4.ine()-This function is responsible of saving the new employee name in csv file , giving unique uid and coping the inputted photo location the project folder.
 
 5.data_writer()-This function writes data to csv file by creating a dataframe with pandas .this function gets input of the temp data from recoiz().
